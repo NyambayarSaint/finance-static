@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site Description Here">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <title>Холбоо барих</title>
+
+    <link href="assets/css/uikit.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/uikit-width-ex.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+
+<body class="loading">
+    <div class="sm-preloader">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" stroke="#fff">
+        <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+            <circle cx="22" cy="22" r="6" stroke-opacity="0">
+                <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"/>
+                <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"/>
+                <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="22" cy="22" r="6" stroke-opacity="0">
+                <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"/>
+                <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"/>
+                <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="22" cy="22" r="8">
+                <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"/>
+            </circle>
+        </g>
+    </svg>
+    </div><div class="header-container sm-header">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container" data-uk-navbar>
+
+        <div class="uk-navbar-left">
+            <div class="sm-logo uk-display-inline-block">
+                <h3 class="site-name">
+                    <a href="index.html"><img src="assets/images/logo.svg" alt="Таван богд финанс" /></a>
+                </h3>
+            </div>
+        </div>
+        
+        <div class="uk-navbar-center">
+
+            <ul class="sm-main-menu uk-visible@m">
+    <li class="menu-item">
+        <a href="index.html">Нүүр</a>
+    </li>
+    <li class="menu-item menu-item-has-children">
+        <a href="loans.html">Зээлийн бүтээгдэхүүн</a>
+
+        <ul class="sub-menu uk-animation-fade">
+            <li><a href="loans-business.html">Бизнесийн зээл</a></li>
+            <li><a href="loans-baritsaat.html">Барьцаат зээл</a></li>
+            <li><a href="loans-nogoon.html">Ногоон зээл</a></li>
+            <li><a href="loans-husug.html">Хөсөг зээл</a></li>
+            <li><a href="loans-tsahim.html">Цахим зээл</a></li>
+            <li><a href="loans-ger.html">Гэр зээл</a></li>
+        </ul>
+    </li>
+    <li class="menu-item">
+        <a href="blog.html">Санхүүгийн зөвлөгөө</a>
+    </li>
+    <li class="menu-item">
+        <a href="contact.html">Холбоо барих</a>
+    </li>
+</ul>            
+        </div>
+
+    </nav>
+        
+        <div id="mobile-menu-modal" class="uk-modal-full" data-uk-modal>
+    <div class="uk-modal-dialog mobile">
+        <button class="uk-modal-close-full" type="button" data-uk-close></button>
+        <div class="uk-light uk-height-viewport sm-mobile-modal uk-flex uk-flex-middle uk-flex-center" data-uk-scrollspy="target:>ul>li,>div>a; cls:uk-animation-slide-bottom-medium; delay: 150;">
+            <ul class="uk-nav-default uk-nav-parent-icon" data-uk-nav>
+            <li class="">
+                <a href="index.html">Нүүр</a>
+            </li>
+            <li class="">
+                <a href="loans.html">Зээлийн бүтээгдэхүүн</a>
+            </li>
+            <li class="">
+                <a href="blog.html">Санхүүгийн зөвлөгөө</a>
+            </li>
+            <li class="">
+                <a href="contact.html">Холбоо барих</a>
+            </li>
+            </ul>
+        </div>
+
+    </div>
+</div>        
+<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true; mode: pull; selPanel: .uk-offcanvas-bar-light;">
+    <div class="uk-offcanvas-bar-light">
+
+        <button class="uk-offcanvas-close" type="button"><img class="uk-preserve" src="assets/images/close.svg" data-uk-svg alt=""></button>
+        <form action="">
+            <h4 class="zeel-title mb-80">Зээлийн хүсэлт илгээх</h4>
+            <label class="zeel-label mb-12">Зээлийн бүтээгдэхүүн</label>
+            <dl id="sample" class="dropdown mb-80">
+                <dt><span>Зээлийн бүтээгдэхүүн сонгох</span></dt>
+                <dd>
+                    <ul>
+                        <li>
+                            <img class="flag" src="assets/images/bus.png" alt="Бизнесийн зээл" /><span class="value">Бизнесийн зээл</span>
+                        </li>
+                        <li>
+                            <img class="flag" src="assets/images/bar.png" alt="Барьцаат зээл" /><span class="value">Барьцаат зээл</span>
+                        </li>
+                        <li>
+                            <img class="flag" src="assets/images/ger.png" alt="Гэр зээл" /><span class="value">Гэр зээл</span>
+                        </li>
+                        <li>
+                            <img class="flag" src="assets/images/hus.png" alt="Хөсөг зээл" /><span class="value">Хөсөг зээл</span>
+                        </li>
+                        <li>
+                            <img class="flag" src="assets/images/nog.png" alt="Ногоон зээл" /><span class="value">Ногоон зээл</span>
+                        </li>
+                        <li>
+                            <img class="flag" src="assets/images/tsa.png" alt="Цахим зээл" /><span class="value">Цахим зээл</span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+
+            <h6 class="zeel-small">Хувийн мэдээлэл</h6>
+            <div class="uk-grid uk-grid-16 uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-2@m">
+                <div>
+                    <label class="zeel-label mb-12">Эцэг, эхийн нэр</label>
+                    <input id="surname" type="text" value="" placeholder="">
+                </div>
+                <div>
+                    <label class="zeel-label mb-12">Өөрийн нэр</label>
+                    <input id="name" type="text" value="" placeholder="">
+                </div>
+            </div>
+            <label class="zeel-label mb-12 mt-24">Регистрийн дугаар</label>
+            <div class="uk-grid uk-grid-16 uk-child-width-1-1 uk-child-width-1-auto@s uk-child-width-auto@m">
+                <div>
+                    <div data-uk-form-custom="target: > * > span:first-child">
+                        <select id="rd1">
+                            <option value="">Р</option>
+                            <option value="А">А</option>
+                            <option value="Б">Б</option>
+                            <option value="В">В</option>
+                            <option value="Г">Г</option>
+                            <option value="Д">Д</option>
+                            <option value="Е">Е</option>
+                        </select>
+                        <button class="uk-button-default" type="button" tabindex="-1">
+                            <span></span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </button>
+                    </div>
+                    <div data-uk-form-custom="target: > * > span:first-child">
+                        <select id="rd2">
+                            <option value="">Д</option>
+                            <option value="А">А</option>
+                            <option value="Б">Б</option>
+                            <option value="В">В</option>
+                            <option value="Г">Г</option>
+                            <option value="Д">Д</option>
+                            <option value="Е">Е</option>
+                        </select>
+                        <button class="uk-button-default" type="button" tabindex="-1">
+                            <span></span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="uk-width-expand">
+                    <input id="rd-full" type="text" value="" placeholder="">
+                </div>
+            </div>
+
+            <div class="uk-grid uk-grid-16 mt-24 mb-80 uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-2@m">
+                <div>
+                    <label class="zeel-label mb-12">Утасны дугаар</label>
+                    <input type="phone" value="" placeholder="">
+                </div>
+                <div>
+                    <label class="zeel-label mb-12">И-мэйл хаяг</label>
+                    <input type="email" value="" placeholder="">
+                </div>
+            </div>
+
+            <h6 class="zeel-small">Зээлийн мэдээлэл</h6>
+            <label class="zeel-label mb-12">Орлогын төрлөө сонгоно уу</label>
+            <div class="uk-width-1-1 mb-32" data-uk-form-custom="target: > * > span:first-child">
+                <select id="orlogo_type">
+                    <option value="tsalin">Цалин</option>
+                    <option value="nemelt">Нэмэлт</option>
+                </select>
+                <button class="uk-button-full" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+
+            <label class="zeel-label mb-12">Сарын нийт орлогын дүн <span>(Төгрөгөөр)</span></label>
+            <div class="uk-width-1-1 mb-32" data-uk-form-custom="target: > * > span:first-child">
+                <select id="orlogo_amount">
+                    <option value="first">500,000₮ - 1,000,000₮</option>
+                    <option value="second">1,000,000₮ - 1,500,000₮</option>
+                    <option value="third">2,000,000₮ - 2,500,000₮</option>
+                </select>
+                <button class="uk-button-full" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+
+            <label class="zeel-label mb-12">Барьцаа хөрөнгийн төрлөө сонгоно уу</label>
+            <div class="uk-width-1-1 mb-32" data-uk-form-custom="target: > * > span:first-child">
+                <select id="orlogo_type">
+                    <option value="">Барьцаа хөрөнгийн төрөл</option>
+                    <option value="real">Үл хөдлөх</option>
+                    <option value="car">Автомашин</option>
+                </select>
+                <button class="uk-button-full" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+
+            <label class="zeel-label mb-12">Барьцаа хөрөнгийн мэдээлэл</label>
+            <textarea class="mb-32" name="information_loan" id="" cols="20" rows="5"></textarea>
+
+            <label class="zeel-label mb-12">Зээлийн эргэн төлөлтийн хэлбэр</label>
+            <div class="uk-width-1-1 mb-80" data-uk-form-custom="target: > * > span:first-child">
+                <select id="loan_type_choose">
+                    <option value="equal">Тэнцүү төлбөрийн аргачлал</option>
+                    <option value="notequal">Тэнцүү төлбөрийн аргачлал</option>
+                </select>
+                <button class="uk-button-full" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+
+
+            <div class="sm-element form-element">
+                <div class="mb-24">
+                    <div class="uk-flex uk-flex-middle uk-flex-between uk-position-relative">
+                        <h2 class="loan-title">Зээлийн нийт дүн</h2>
+                        <input class="mw-155 principal" id="principal_fixed" width="60px" type="text" value="200,000,000₮" onfocus="this.select(); this.selAll=1;" onkeyup="changedPP_fixed(this.value)">
+                    </div>
+                    <div class="uk-clearfix">
+                        <input type="range" min="10000000" max="300000000" step="1000000" value="200000000" onchange="showPurchase_fixed(this.value)">
+                        <span class="uk-float-left">
+                            10’000’000₮
+                        </span>
+                        <span class="uk-float-right">
+                            300’000’000₮
+                        </span>
+                    </div>
+                </div>
+                <div class="mb-24">
+                    <div class="uk-flex uk-flex-middle uk-flex-between uk-position-relative">
+                        <h2 class="loan-title">Сарын хүү</h2>
+                        <input class="mw-155 interest" id="interest_fixed" type="text" value="2.7%" onchange="focusoutIR_fixed(this.value)">
+                    </div>
+                    <div class="uk-clearfix">
+                        <input type="range" min="2.5" max="2.9" value="2.7" step=".1" onchange="changedIR_fixed(this.value)">
+                        <span class="uk-float-left">
+                            2.5%
+                        </span>
+                        <span class="uk-float-right">
+                            2.9%
+                        </span>
+                    </div>
+                </div>
+                <div class="mb-24">
+                    <div class="uk-flex uk-flex-middle uk-flex-between uk-position-relative">
+                        <h2 class="loan-title">Зээлийн хугацаа</h2>
+                        <input class="mw-155 terms" id="terms_fixed" type="text" value="18 сар" onchange="focusoutTIME_fixed(this.value)">
+                    </div>
+                    <div class="uk-clearfix">
+                        <input type="range" min="1" max="36" value="18" step="1" onchange="changedTIME_fixed(this.value)">
+                        <span class="uk-float-left">
+                            1 сар
+                        </span>
+                        <span class="uk-float-right">
+                            36 сар
+                        </span>
+                    </div>
+                </div>
+                <div class="mb-24">
+                    <div class="uk-flex uk-flex-middle uk-flex-between uk-position-relative">
+                        <h2 class="loan-title">Хөнгөлөлттэй хугацаа</h2>
+                        <input class="mw-155 time" id="time_fixed" type="text" value="6 сар" onchange="focusoutTIME_fixed2(this.value)">
+                    </div>
+                    <div class="uk-clearfix">
+                        <input type="range" min="1" max="12" value="6" step="1" onchange="changedTIME_fixed2(this.value)">
+                        <span class="uk-float-left">
+                            1 сар
+                        </span>
+                        <span class="uk-float-right">
+                            12 сар
+                        </span>
+                    </div>
+                </div>
+                <!-- <div class="mb-24">
+                    <a href="#" onclick="getValues()">Зээлийн тооцоолуур</a>
+                </div> -->
+                <div id="Result_fixed" class="mt-64">
+                    <table class="uk-table uk-table-striped  uk-table-middle uk-table-small">
+                        <tr>
+                            <th>Огноо</th>
+                            <th>Төлөлтийн дугаар</th>
+                            <th>Хүү тооцсон хоног</th>
+                            <th>Зээлийн хүү</th>
+                            <th>Үндсэн төлбөр</th>
+                            <th>Нийт төлбөр</th>
+                            <th>Зээлийн үлдэгдэл</th>
+                        </tr>
+                        <tr>
+                            <td>2021.09.30</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>2021.10.30</td>
+                            <td>1</td>
+                            <td>30</td>
+                            <td>9,863</td>
+                            <td>330,141</td>
+                            <td>340,004</td>
+                            <td>1,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>2021.11.30</td>
+                            <td>2</td>
+                            <td>31</td>
+                            <td>6,827</td>
+                            <td>333,177</td>
+                            <td>340,004</td>
+                            <td>1,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>2021.12.30</td>
+                            <td>3</td>
+                            <td>30</td>
+                            <td>3,321</td>
+                            <td>336,683</td>
+                            <td>340,004</td>
+                            <td>1,000,000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="uk-text-center">
+                <a href="#" type="submit" class="uk-button large2x  mt-40">Зээлийн хүсэлт илгээх</a>
+            </div>
+
+        </form>
+
+    </div>
+</div>    
+</div><!-- .main-container close -->
+<div class="main-container"><section class="uk-section uk-section-single uk-light dark_bg masked_bg">
+    <div class="uk-container">
+        <div class="sm-element page-title">
+            <h6 class="secondary_color">Бидэнтэй холбогдох</h6>
+            <h2 class="">Холбоо барих</h2>
+            <p class="mw-510 para-lead">Санхүүгийн ухаалаг шийдлийг харилцагч бүртээ хүргэсэн тогтвортой хөгжлийг түүчээлэгч байгууллага байна.</p>
+        </div>
+    </div>
+</section>
+<section class="uk-section uk-section-single">
+    <div class="uk-container">
+        <div class="uk-grid uk-child-width-1-1 uk-child-width-1-2@m">
+            <div>
+                <div class="iconbox uk-grid mb-48 uk-grid-24 uk-child-width-expand@m">
+                    <div class="uk-width-auto">
+                        <img src="assets/images/location.svg" class="uk-preserve" data-uk-svg alt="">
+                    </div>
+                    <div>
+                        <span class="sub-title">Оффисын хаяг</span>
+                        <h5 class="mw-400">СБД, 8-р хороо, бага тойруу, Таван богд плаза төвийн 1 давхарт</h5>
+                    </div>
+                </div>
+                <div class="iconbox uk-grid mb-48 uk-grid-24 uk-child-width-expand@m">
+                    <div class="uk-width-auto">
+                        <img src="assets/images/email.svg" class="uk-preserve" data-uk-svg alt="">
+                    </div>
+                    <div>
+                        <span class="sub-title">И-мэйл</span>
+                        <h5><a href="mailto:info-tbfinance@tavanbogd.com">info-tbfinance@tavanbogd.com</a></h5>
+                    </div>
+                </div>
+                <div class="iconbox uk-grid uk-grid-24 uk-child-width-expand@m">
+                    <div class="uk-width-auto">
+                        <img src="assets/images/phone.svg" class="ct uk-preserve" data-uk-svg alt="">
+                    </div>
+                    <div>
+                        <span class="sub-title">Утас</span>
+                        <h5><a href="phone:75331111">+976 7533 1111</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="uk-section uk-section-single">
+    <div class="uk-container">
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=106.91287279129028%2C47.91769386027759%2C106.92703485488893%2C47.924085765311446&amp;layer=mapnik&amp;marker=47.920895191666304%2C106.9199556671083"></iframe>
+    </div>
+</section><footer class="uk-section uk-padding-remove-vertical heading_bg uk-light">
+    
+    <div class="bottom-area">
+        <div class="uk-container">
+            <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-medium" data-uk-grid>
+                <div class="widget uk-width-1-1 uk-width-1-3@s uk-width-5-12@m">
+                    <img src="assets/images/logo-white.svg" class="uk-preserve" data-uk-svg alt="Таван богд финанс">
+                    <p class="mt-32">Таванбогд Финанс ХХК, ХААН Банк цамхаг Чингисийн өргөн чөлөө-6, Стадион Оргил-1, Хан-Уул дүүрэг, Улаанбаатар 17010, Монгол Улс.</p>
+                </div>
+                <div class="widget uk-width-1-1 uk-width-1-3@s uk-width-1-4@m">
+                    
+                </div>
+                <div class="widget uk-width-1-1 uk-width-1-3@s uk-width-1-3@m">
+                    <div class="sm-contact-widget">
+                        <h3 class="widget-title"><span>Бидэнтэй нэгдээрэй</span></h3>
+                        <ul>
+                            <li>
+                                <div class="sm-element sm-socials sm-social-light with-hover">
+                                    <a href=""><img src="assets/images/icon-facebook.svg" data-uk-svg class="uk-preserve" alt=""></a>
+                                    <a href=""><img src="assets/images/icon-instagram.svg" data-uk-svg class="uk-preserve" alt=""></a>
+                                    <a href=""><img src="assets/images/icon-twitter.svg" data-uk-svg class="uk-preserve" alt=""></a>
+                                    <a href=""><img src="assets/images/icon-youtube.svg" data-uk-svg class="uk-preserve" alt=""></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-area">
+        <div class="uk-container">
+            <div class="footer-top-line copyright">
+                <p><span class="uk-light">Таванбогд Финанс ХХК</span> © 2021. Бүх эрх хуулиар хамгаалагдсан</p>
+            </div>
+        </div>
+    </div>
+</footer></div>
+<!-- .main-container close --><script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

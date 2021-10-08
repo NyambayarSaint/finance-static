@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site Description Here">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <title>Таван богд финанс</title>
+
+    <link href="assets/css/uikit.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/uikit-width-ex.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+
+<body class="loading">
+    <div class="sm-preloader">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" stroke="#fff">
+        <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+            <circle cx="22" cy="22" r="6" stroke-opacity="0">
+                <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"/>
+                <animate attributeName="stroke-opacity" begin="1.5s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"/>
+                <animate attributeName="stroke-width" begin="1.5s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="22" cy="22" r="6" stroke-opacity="0">
+                <animate attributeName="r" begin="3s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite"/>
+                <animate attributeName="stroke-opacity" begin="3s" dur="3s" values="1;0" calcMode="linear" repeatCount="indefinite"/>
+                <animate attributeName="stroke-width" begin="3s" dur="3s" values="2;0" calcMode="linear" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="22" cy="22" r="8">
+                <animate attributeName="r" begin="0s" dur="1.5s" values="6;1;2;3;4;5;6" calcMode="linear" repeatCount="indefinite"/>
+            </circle>
+        </g>
+    </svg>
+    </div><div class="header-container sm-header">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container" data-uk-navbar>
+
+        <div class="uk-navbar-left">
+            <div class="sm-logo uk-display-inline-block">
+                <h3 class="site-name">
+                    <a href="index.html"><img src="assets/images/logo.svg" alt="Таван богд финанс" /></a>
+                </h3>
+            </div>
+        </div>
+        
+        <div class="uk-navbar-center">
+
+            <ul class="sm-main-menu uk-visible@m">
+    <li class="menu-item">
+        <a href="index.html">Нүүр</a>
+    </li>
+    <li class="menu-item menu-item-has-children">
+        <a href="loans.html">Зээлийн бүтээгдэхүүн</a>
+
+        <ul class="sub-menu uk-animation-fade">
+            <li><a href="loans-business.html">Бизнесийн зээл</a></li>
+            <li><a href="loans-baritsaat.html">Барьцаат зээл</a></li>
+            <li><a href="loans-nogoon.html">Ногоон зээл</a></li>
+            <li><a href="loans-husug.html">Хөсөг зээл</a></li>
+            <li><a href="loans-tsahim.html">Цахим зээл</a></li>
+            <li><a href="loans-ger.html">Гэр зээл</a></li>
+        </ul>
+    </li>
+    <li class="menu-item">
+        <a href="blog.html">Санхүүгийн зөвлөгөө</a>
+    </li>
+    <li class="menu-item">
+        <a href="contact.html">Холбоо барих</a>
+    </li>
+</ul>            
+        </div>
+        <!-- <div class="uk-navbar-right">
+            <a class="mobile-menu uk-hidden@m" href="#" data-uk-toggle="target: #mobile-menu-modal"><img class="uk-preserve" src="assets/images/menu-line.svg" data-uk-svg alt=""></a>
+            <div class="sm-header-meta uk-visible@s uk-flex-right">
+                <a class="uk-button" href="#" data-uk-toggle="target: #offcanvas-flip;">Зээлийн хүсэлт илгээх</a>
+            </div>
+        </div> -->
+
+    </nav>
+        
+        <div id="mobile-menu-modal" class="uk-modal-full" data-uk-modal>
+    <div class="uk-modal-dialog mobile">
+        <button class="uk-modal-close-full" type="button" data-uk-close></button>
+        <div class="uk-light uk-height-viewport sm-mobile-modal uk-flex uk-flex-middle uk-flex-center" data-uk-scrollspy="target:>ul>li,>div>a; cls:uk-animation-slide-bottom-medium; delay: 150;">
+            <ul class="uk-nav-default uk-nav-parent-icon" data-uk-nav>
+            <li class="">
+                <a href="index.html">Нүүр</a>
+            </li>
+            <li class="">
+                <a href="loans.html">Зээлийн бүтээгдэхүүн</a>
+            </li>
+            <li class="">
+                <a href="blog.html">Санхүүгийн зөвлөгөө</a>
+            </li>
+            <li class="">
+                <a href="contact.html">Холбоо барих</a>
+            </li>
+            </ul>
+        </div>
+
+    </div>
+</div>        
+<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true; mode: pull; selPanel: .uk-offcanvas-bar-light;">
+    <div class="uk-offcanvas-bar-light">
+
+        <button class="uk-offcanvas-close" type="button"><img class="uk-preserve" src="assets/images/close.svg" data-uk-svg alt=""></button>
+        <form action="">
+            <h4 class="zeel-title mb-80">Зээлийн хүсэлт илгээх</h4>
+            <label class="zeel-label mb-12">Зээлийн бүтээгдэхүүн</label>
+            <dl id="sample" class="dropdown mb-80">
+                <dt><span>Зээлийн бүтээгдэхүүн сонгох</span></dt>
+                <dd>
+                    <ul>
+                        <li>
+                            <img class="flag" src="assets/images/bus.png" alt="Бизнесийн зээл" /><span class="value">Бизнесийн зээл</span>
+                        </li>
+                        <li>
+                            <img class="flag" src="assets/images/bar.png" alt="Барьцаат зээл" /><span class="value">Барьцаат зээл</span>
+                        </li>
+                        <li>
+                            <img class="flag" src="assets/images/ger.png" alt="Гэр зээл" /><span class="value">Гэр зээл</span>
+                        </li>
+                        <li>
+                            <img class="flag" src="assets/images/hus.png" alt="Хөсөг зээл" /><span class="value">Хөсөг зээл</span>
+                        </li>
+                        <li>
+                            <img class="flag" src="assets/images/nog.png" alt="Ногоон зээл" /><span class="value">Ногоон зээл</span>
+                        </li>
+                        <li>
+                            <img class="flag" src="assets/images/tsa.png" alt="Цахим зээл" /><span class="value">Цахим зээл</span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+
+            <h6 class="zeel-small">Хувийн мэдээлэл</h6>
+            <div class="uk-grid uk-grid-16 uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-2@m">
+                <div>
+                    <label class="zeel-label mb-12">Эцэг, эхийн нэр</label>
+                    <input id="surname" type="text" value="" placeholder="">
+                </div>
+                <div>
+                    <label class="zeel-label mb-12">Өөрийн нэр</label>
+                    <input id="name" type="text" value="" placeholder="">
+                </div>
+            </div>
+            <label class="zeel-label mb-12 mt-24">Регистрийн дугаар</label>
+            <div class="uk-grid uk-grid-16 uk-child-width-1-1 uk-child-width-1-auto@s uk-child-width-auto@m">
+                <div>
+                    <div data-uk-form-custom="target: > * > span:first-child">
+                        <select id="rd1">
+                            <option value="">Р</option>
+                            <option value="А">А</option>
+                            <option value="Б">Б</option>
+                            <option value="В">В</option>
+                            <option value="Г">Г</option>
+                            <option value="Д">Д</option>
+                            <option value="Е">Е</option>
+                        </select>
+                        <button class="uk-button-default" type="button" tabindex="-1">
+                            <span></span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </button>
+                    </div>
+                    <div data-uk-form-custom="target: > * > span:first-child">
+                        <select id="rd2">
+                            <option value="">Д</option>
+                            <option value="А">А</option>
+                            <option value="Б">Б</option>
+                            <option value="В">В</option>
+                            <option value="Г">Г</option>
+                            <option value="Д">Д</option>
+                            <option value="Е">Е</option>
+                        </select>
+                        <button class="uk-button-default" type="button" tabindex="-1">
+                            <span></span>
+                            <span uk-icon="icon: chevron-down"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="uk-width-expand">
+                    <input id="rd-full" type="text" value="" placeholder="">
+                </div>
+            </div>
+
+            <div class="uk-grid uk-grid-16 mt-24 mb-80 uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-2@m">
+                <div>
+                    <label class="zeel-label mb-12">Утасны дугаар</label>
+                    <input type="phone" value="" placeholder="">
+                </div>
+                <div>
+                    <label class="zeel-label mb-12">И-мэйл хаяг</label>
+                    <input type="email" value="" placeholder="">
+                </div>
+            </div>
+
+            <h6 class="zeel-small">Зээлийн мэдээлэл</h6>
+            <label class="zeel-label mb-12">Орлогын төрлөө сонгоно уу</label>
+            <div class="uk-width-1-1 mb-32" data-uk-form-custom="target: > * > span:first-child">
+                <select id="orlogo_type">
+                    <option value="tsalin">Цалин</option>
+                    <option value="nemelt">Нэмэлт</option>
+                </select>
+                <button class="uk-button-full" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+
+            <label class="zeel-label mb-12">Сарын нийт орлогын дүн <span>(Төгрөгөөр)</span></label>
+            <div class="uk-width-1-1 mb-32" data-uk-form-custom="target: > * > span:first-child">
+                <select id="orlogo_amount">
+                    <option value="first">500,000₮ - 1,000,000₮</option>
+                    <option value="second">1,000,000₮ - 1,500,000₮</option>
+                    <option value="third">2,000,000₮ - 2,500,000₮</option>
+                </select>
+                <button class="uk-button-full" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+
+            <label class="zeel-label mb-12">Барьцаа хөрөнгийн төрлөө сонгоно уу</label>
+            <div class="uk-width-1-1 mb-32" data-uk-form-custom="target: > * > span:first-child">
+                <select id="orlogo_type">
+                    <option value="">Барьцаа хөрөнгийн төрөл</option>
+                    <option value="real">Үл хөдлөх</option>
+                    <option value="car">Автомашин</option>
+                </select>
+                <button class="uk-button-full" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+
+            <label class="zeel-label mb-12">Барьцаа хөрөнгийн мэдээлэл</label>
+            <textarea class="mb-32" name="information_loan" id="" cols="20" rows="5"></textarea>
+
+            <label class="zeel-label mb-12">Зээлийн эргэн төлөлтийн хэлбэр</label>
+            <div class="uk-width-1-1 mb-80" data-uk-form-custom="target: > * > span:first-child">
+                <select id="loan_type_choose">
+                    <option value="equal">Тэнцүү төлбөрийн аргачлал</option>
+                    <option value="notequal">Тэнцүү төлбөрийн аргачлал</option>
+                </select>
+                <button class="uk-button-full" type="button" tabindex="-1">
+                    <span></span>
+                    <span uk-icon="icon: chevron-down"></span>
+                </button>
+            </div>
+
+
+            <div class="sm-element form-element">
+                <div class="mb-24">
+                    <div class="uk-flex uk-flex-middle uk-flex-between uk-position-relative">
+                        <h2 class="loan-title">Зээлийн нийт дүн</h2>
+                        <input class="mw-155 principal" id="principal_fixed" width="60px" type="text" value="200,000,000₮" onfocus="this.select(); this.selAll=1;" onkeyup="changedPP_fixed(this.value)">
+                    </div>
+                    <div class="uk-clearfix">
+                        <input type="range" min="10000000" max="300000000" step="1000000" value="200000000" onchange="showPurchase_fixed(this.value)">
+                        <span class="uk-float-left">
+                            10’000’000₮
+                        </span>
+                        <span class="uk-float-right">
+                            300’000’000₮
+                        </span>
+                    </div>
+                </div>
+                <div class="mb-24">
+                    <div class="uk-flex uk-flex-middle uk-flex-between uk-position-relative">
+                        <h2 class="loan-title">Сарын хүү</h2>
+                        <input class="mw-155 interest" id="interest_fixed" type="text" value="2.7%" onchange="focusoutIR_fixed(this.value)">
+                    </div>
+                    <div class="uk-clearfix">
+                        <input type="range" min="2.5" max="2.9" value="2.7" step=".1" onchange="changedIR_fixed(this.value)">
+                        <span class="uk-float-left">
+                            2.5%
+                        </span>
+                        <span class="uk-float-right">
+                            2.9%
+                        </span>
+                    </div>
+                </div>
+                <div class="mb-24">
+                    <div class="uk-flex uk-flex-middle uk-flex-between uk-position-relative">
+                        <h2 class="loan-title">Зээлийн хугацаа</h2>
+                        <input class="mw-155 terms" id="terms_fixed" type="text" value="18 сар" onchange="focusoutTIME_fixed(this.value)">
+                    </div>
+                    <div class="uk-clearfix">
+                        <input type="range" min="1" max="36" value="18" step="1" onchange="changedTIME_fixed(this.value)">
+                        <span class="uk-float-left">
+                            1 сар
+                        </span>
+                        <span class="uk-float-right">
+                            36 сар
+                        </span>
+                    </div>
+                </div>
+                <div class="mb-24">
+                    <div class="uk-flex uk-flex-middle uk-flex-between uk-position-relative">
+                        <h2 class="loan-title">Хөнгөлөлттэй хугацаа</h2>
+                        <input class="mw-155 time" id="time_fixed" type="text" value="6 сар" onchange="focusoutTIME_fixed2(this.value)">
+                    </div>
+                    <div class="uk-clearfix">
+                        <input type="range" min="1" max="12" value="6" step="1" onchange="changedTIME_fixed2(this.value)">
+                        <span class="uk-float-left">
+                            1 сар
+                        </span>
+                        <span class="uk-float-right">
+                            12 сар
+                        </span>
+                    </div>
+                </div>
+                <!-- <div class="mb-24">
+                    <a href="#" onclick="getValues()">Зээлийн тооцоолуур</a>
+                </div> -->
+                <div id="Result_fixed" class="mt-64">
+                    <table class="uk-table uk-table-striped  uk-table-middle uk-table-small">
+                        <tr>
+                            <th>Огноо</th>
+                            <th>Төлөлтийн дугаар</th>
+                            <th>Хүү тооцсон хоног</th>
+                            <th>Зээлийн хүү</th>
+                            <th>Үндсэн төлбөр</th>
+                            <th>Нийт төлбөр</th>
+                            <th>Зээлийн үлдэгдэл</th>
+                        </tr>
+                        <tr>
+                            <td>2021.09.30</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>2021.10.30</td>
+                            <td>1</td>
+                            <td>30</td>
+                            <td>9,863</td>
+                            <td>330,141</td>
+                            <td>340,004</td>
+                            <td>1,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>2021.11.30</td>
+                            <td>2</td>
+                            <td>31</td>
+                            <td>6,827</td>
+                            <td>333,177</td>
+                            <td>340,004</td>
+                            <td>1,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>2021.12.30</td>
+                            <td>3</td>
+                            <td>30</td>
+                            <td>3,321</td>
+                            <td>336,683</td>
+                            <td>340,004</td>
+                            <td>1,000,000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="uk-text-center">
+                <a href="#" type="submit" class="uk-button large2x  mt-40">Зээлийн хүсэлт илгээх</a>
+            </div>
+
+        </form>
+
+    </div>
+</div>    
+</div><!-- .main-container close -->
+<div class="main-container"><section class="sm-slider masked_bg_light">
+    <div class="uk-container uk-position-relative uk-position-z-index2">
+        <div class="sm-element sm-slideshow" data-uk-slideshow="animation:fade; min-height: 840; max-height: 840;">
+            <div class="uk-position-relative">
+                <ul class="uk-slideshow-items" data-uk-height-viewport="offset-top: true; offset-bottom: 2">
+                    <li>
+                        <div class="slider-content uk-flex uk-flex-middle uk-grid-medium uk-child-width-1-1 uk-child-width-1-2@m uk-height-1-1" data-uk-grid>
+                            <div>
+                                <div class="sm-element sm-heading" data-uk-scrollspy="target: > *; cls:uk-animation-slide-bottom-medium; delay: 400;">
+                                    <h1 class="sm-title">Бизнесийн зээл</h1>
+                                    <p class="sm-desc sm-width-320">Бизнесийн эргэлтийн хөрөнгө, хөрөнгө оруулалтад зориулсан санхүүжилтэд зориулсан бүтээгдэхүүн</p>
+                                    <a href="loans-business.html" class="uk-button large secondary_bg">Дэлгэрэнгүй</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-position-relative" data-uk-scrollspy="target: > img; cls:uk-animation-fade; delay: 200;">
+                                    <img src="assets/images/featured-img.jpg" alt="">
+                                    <div class="uk-position-absolute uk-transform-center uk-visible@m" data-uk-scrollspy="target: > svg; cls:uk-animation-fade; delay: 600;" style="left: -5%; bottom: -10%;">
+                                        <img src="assets/images/loan-info.svg" class="uk-preserve" data-uk-svg alt="">
+                                    </div>
+                                    <div class="uk-position-absolute uk-transform-center uk-visible@m" data-uk-scrollspy="target: > svg; cls:uk-animation-fade; delay: 800;" style="left: 80px;bottom: -45%;">
+                                        <img src="assets/images/loan-info-2.svg" class="uk-preserve" data-uk-svg alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slider-content uk-flex uk-flex-middle uk-grid-medium uk-child-width-1-1 uk-child-width-1-2@m uk-height-1-1" data-uk-grid>
+                            <div>
+                                <div class="sm-element sm-heading" data-uk-scrollspy="target: > *; cls:uk-animation-slide-bottom-medium; delay: 400;">
+                                    <h1 class="sm-title">Автомашины зээлийн аян эхэллээ!</h1>
+                                    <p class="sm-desc sm-width-320">Та Монголд орж ирсэн гаалийн бичигтэй эсвэл 0 гүйлттэй цоо шинэ автомашин авах гэж байна уу?</p>
+                                    <a href="loans-husug.html" class="uk-button large secondary_bg">Дэлгэрэнгүй</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-position-relative" data-uk-scrollspy="target: > img; cls:uk-animation-fade; delay: 200;">
+                                    <img src="assets/images/slider-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a class="sm-pagenav uk-visible@s uk-position-center-left-out uk-position-medium uk-hidden-hover" href="#" uk-slideshow-item="previous">
+                    <img src="assets/images/icon-arrow-left.svg" data-uk-svg alt="">
+                </a>
+                <a class="sm-pagenav uk-visible@s uk-position-center-right-out uk-position-medium uk-hidden-hover" href="#" uk-slideshow-item="next">
+                    <img src="assets/images/icon-arrow-right.svg" data-uk-svg alt="">
+                </a>
+                <div class="uk-position-bottom-left uk-position-small">
+                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="uk-section white_bg">
+    <div class="uk-container">
+        <div class="sm-element uk-flex uk-flex-bottom uk-flex-between">
+            <div class="sm-element sm-heading">
+                <h6 class="secondary_color">
+                    Таны хэрэгцээнд тохирсон
+                </h6>
+                <h2>
+                    Зээлийн бүтээгдэхүүн
+                </h2>
+            </div>
+            <a class="uk-visible@s" href="loans.html">Дэлгэрэнгүй үзэх <img class="uk-preserve" src="assets/images/ia-right.svg" data-uk-svg alt=""></a>
+        </div>
+
+        <div class="mt-16" data-uk-slider>
+
+            <div class="uk-position-relative">
+
+                <div class="uk-slider-container">
+                    <ul class="uk-slider-items uk-grid-match uk-grid uk-child-width-1-3@m uk-child-width-1-2@s" data-uk-scrollspy="target: > li; cls:uk-animation-slide-bottom-small; delay: 200;">
+                        <li>
+                            <a href="loans-business.html" class="sm-element sm-box">
+                                <div class="inner">
+                                    <img src="assets/images/icon-combo-1.svg" class="uk-preserve" data-uk-svg alt="">
+                                    <h4 class="sm-title">
+                                        Бизнесийн зээл
+                                    </h4>
+                                    <p class="description">
+                                        Бизнесийн эргэлтийн хөрөнгө, хөрөнгө оруулалтад зориулсан санхүүжилт
+                                    </p>
+                                </div>
+                                <div class="card-metas uk-flex uk-flex-middle uk-flex-between gt-pl-medium gt-pr-medium card-metas-border-remove">
+                                    <div class="card-meta-item"><span>Сарын хүү</span>
+                                        <div>2.5% - 2.9%</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Хугацаа</span>
+                                        <div>36 сар</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Дээд хэмжээ</span>
+                                        <div>2 тэрбум төг.</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="loans-baritsaat.html" class="sm-element sm-box">
+                                <div class="inner">
+                                    <img src="assets/images/icon-combo-2.svg" class="uk-preserve" data-uk-svg alt="">
+                                    <h4 class="sm-title">
+                                        Барьцаат зээл
+                                    </h4>
+                                    <p class="description">
+                                        Хөдлөх хөрөнгө болон үл хөдлөх хөрөнгө барьцаалсан зээл
+                                    </p>
+                                </div>
+                                <div class="card-metas uk-flex uk-flex-middle uk-flex-between gt-pl-medium gt-pr-medium card-metas-border-remove">
+                                    <div class="card-meta-item"><span>Сарын хүү</span>
+                                        <div>2.8% - 3.0%</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Хугацаа</span>
+                                        <div>60 сар</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Дээд хэмжээ</span>
+                                        <div>500 сая төг.</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="loans-nogoon.html" class="sm-element sm-box">
+                                <div class="inner">
+                                    <img src="assets/images/icon-combo-3.svg" class="uk-preserve" data-uk-svg alt="">
+                                    <h4 class="sm-title">
+                                        Ногоон зээл
+                                    </h4>
+                                    <p class="description">
+                                        Бизнесийн эргэлтийн хөрөнгө, хөрөнгө оруулалтад зориулсан санхүүжилт
+                                    </p>
+                                </div>
+                                <div class="card-metas uk-flex uk-flex-middle uk-flex-between gt-pl-medium gt-pr-medium card-metas-border-remove">
+                                    <div class="card-meta-item"><span>Сарын хүү</span>
+                                        <div>1.8% - 2.4%</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Хугацаа</span>
+                                        <div>120 сар</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Дээд хэмжээ</span>
+                                        <div>500 сая төг.</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="loans-husug.html" class="sm-element sm-box">
+                                <div class="inner">
+                                    <img src="assets/images/icon-combo-4.svg" class="uk-preserve" data-uk-svg alt="">
+                                    <h4 class="sm-title">
+                                        Хөсөг зээл
+                                    </h4>
+                                    <p class="description">
+                                        Гаальтай болон 0 гүйлттэй автомашин худалдан авах зээл
+                                    </p>
+                                </div>
+                                <div class="card-metas uk-flex uk-flex-middle uk-flex-between gt-pl-medium gt-pr-medium card-metas-border-remove">
+                                    <div class="card-meta-item"><span>Сарын хүү</span>
+                                        <div>2.2% - 2.9%</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Хугацаа</span>
+                                        <div>60 сар</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Дээд хэмжээ</span>
+                                        <div>300 сая төг.</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="loans-tsahim.html" class="sm-element sm-box">
+                                <div class="inner">
+                                    <img src="assets/images/icon-combo-5.svg" class="uk-preserve" data-uk-svg alt="">
+                                    <h4 class="sm-title">
+                                        Цахим зээл
+                                    </h4>
+                                    <p class="description">
+                                        Барьцаагүй зээлийн цахимд суурилсан бүтээгдэхүүн
+                                    </p>
+                                </div>
+                                <div class="card-metas uk-flex uk-flex-middle uk-flex-between gt-pl-medium gt-pr-medium card-metas-border-remove">
+                                    <div class="card-meta-item"><span>Сарын хүү</span>
+                                        <div>2.0% - 2.9%</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Хугацаа</span>
+                                        <div>36 сар</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Дээд хэмжээ</span>
+                                        <div>20 сая төг.</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="loans-ger.html" class="sm-element sm-box">
+                                <div class="inner">
+                                    <img src="assets/images/icon-combo-6.svg" class="uk-preserve" data-uk-svg alt="">
+                                    <h4 class="sm-title">
+                                        Гэр зээл
+                                    </h4>
+                                    <p class="description">
+                                        Орон сууц, хашаа байшин, амины сууц худалдан авах, барих, сайжруулах зээл
+                                    </p>
+                                </div>
+                                <div class="card-metas uk-flex uk-flex-middle uk-flex-between gt-pl-medium gt-pr-medium card-metas-border-remove">
+                                    <div class="card-meta-item"><span>Сарын хүү</span>
+                                        <div>2.2% - 2.8%</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Хугацаа</span>
+                                        <div>120 сар</div>
+                                    </div>
+                                    <div class="card-meta-item"><span>Дээд хэмжээ</span>
+                                        <div>500 сая төг.</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="uk-visible@l">
+                    <a class="sm-pagenav uk-position-center-left-out uk-position-medium" href="#" uk-slider-item="previous"><img src="assets/images/icon-arrow-left.svg" data-uk-svg alt=""></a>
+                    <a class="sm-pagenav uk-position-center-right-out uk-position-medium" href="#" uk-slider-item="next"><img src="assets/images/icon-arrow-right.svg" data-uk-svg alt=""></a>
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-hidden@l"></ul>
+
+            </div>
+        </div>
+    </div>
+</section><section class="uk-section white_bg sm-bt1">
+    <div class="uk-container">
+        <div class="uk-flex-middle uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-2@m" data-uk-grid>
+            <div>
+                <img src="assets/images/about-img.png" alt="">
+            </div>
+            <div>
+                <div class="about-container">
+                    <div class="sm-element sm-heading">
+                        <h6 class="secondary_color">
+                            Таван богд Финанс
+                        </h6>
+                        <h2>
+                            Бидний тухай
+                        </h2>
+                    </div>
+                    <div class="mt-40" id="about-slider" data-uk-slider="animation:fade">
+                        <div class="uk-position-relative">
+                            <div class="uk-slider-container p0">
+                                <ul class="uk-slider-items uk-grid uk-child-width-1-1">
+                                    <li>
+                                        <div>
+                                            <p class="para-lead">Таван Богд группийн охин компани Таван Богд Финанс ББСБ нь санхүүгийн цогц үйлчилгээг харилцагч бүрдээ хүргэх зорилготойгоор үйл ажиллагаагаа эхлүүлсэн. Бид албан ёсоор зээл олгоод хоёр сар хүрэхгүй хугацаа
+                                                л өнгөрч байгаа ч харилцагч та бүхэндээ хурдан шуурхай, уян хатан нөхцөлтэй зээлийн бүтээгдэхүүн хүргэхээр шаргуу ажилласаар байна.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p class="para-lead">Манай найрсаг хамт олон харилцагч бүрийнхээ хэрэгцээ шаардлагад нийцсэн үйлчилгээг хурдан шуурхай хүргэхийн тулд 6 нэр төрлийн зээлүүдийг зах зээлд нэвтрүүллээ.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-40">
+                                <div class="uk-display-inline-block">
+                                    <a class="sm-pagenav" href="#" uk-slider-item="previous"><img src="assets/images/icon-arrow-left.svg" data-uk-svg alt=""></a>
+                                </div>
+                                <div class="uk-display-inline-block">
+                                    <a class="sm-pagenav" href="#" uk-slider-item="next"><img src="assets/images/icon-arrow-right.svg" data-uk-svg alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="uk-section light_bg">
+    <div class="uk-container">
+        <div class="sm-element sm-heading">
+            <h6 class="secondary_color">
+                Мэдээ мэдээлэл, ухаалаг зөвлөгөө
+            </h6>
+            <h2>
+                Санхүүгийн зөвлөгөө
+            </h2>
+        </div>
+
+        <div class="mt-16" data-uk-slider>
+
+            <div class="uk-position-relative">
+
+                <div class="uk-slider-container">
+                    <ul class="uk-slider-items uk-grid-match uk-grid uk-child-width-1-3@m uk-child-width-1-2@s" data-uk-scrollspy="target: > li; cls:uk-animation-slide-bottom-small; delay: 200;">
+
+                        <li class="post-item">
+                            <div class="entry-media">
+                                <a href="blog-single.html" class="sm-image-hover" title="Онлайн орчинд хэн гэдгээ дэлгэхээс сэргийлэх 9 алхам">
+                                    <img src="assets/images/post-img-1.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <a href="blog-single.html" class="sm-meta cat"><span>Зөвлөгөө</span></a>
+                                <div class="sm-meta date"><span>2021.09.20</span></div>
+                                <h3 class="post-title"><a href="blog-single.html">Онлайн орчинд хэн гэдгээ дэлгэхээс сэргийлэх 9 алхам</a></h3>
+                            </div>
+                        </li>
+
+                        <li class="post-item">
+                            <div class="entry-media">
+                                <a href="blog-single.html" class="sm-image-hover" title="Бид яагаад баримтыг үл ойшоож, сэтгэл хөдлөлдөө автдаг вэ?">
+                                    <img src="assets/images/post-img-2.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <a href="blog-single.html" class="sm-meta cat"><span>Зөвлөгөө</span></a>
+                                <div class="sm-meta date"><span>2021.09.20</span></div>
+                                <h3 class="post-title"><a href="blog-single.html">Бид яагаад баримтыг үл ойшоож, сэтгэл хөдлөлдөө автдаг вэ?</a></h3>
+                            </div>
+                        </li>
+
+                        <li class="post-item">
+                            <div class="entry-media">
+                                <a href="blog-single.html" class="sm-image-hover" title="Олон улсад бизнесийн байгууллагууд хэрэглэгчийн хурууны хээ ...">
+                                    <img src="assets/images/post-img-3.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <a href="blog-single.html" class="sm-meta cat"><span>Зөвлөгөө</span></a>
+                                <div class="sm-meta date"><span>2021.09.20</span></div>
+                                <h3 class="post-title"><a href="blog-single.html">Олон улсад бизнесийн байгууллагууд хэрэглэгчийн хурууны хээ ...</a></h3>
+                            </div>
+                        </li>
+
+                        <li class="post-item">
+                            <div class="entry-media">
+                                <a href="blog-single.html" class="sm-image-hover" title="Бид яагаад баримтыг үл ойшоож, сэтгэл хөдлөлдөө автдаг вэ?">
+                                    <img src="assets/images/post-img-2.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <a href="blog-single.html" class="sm-meta cat"><span>Зөвлөгөө</span></a>
+                                <div class="sm-meta date"><span>2021.09.20</span></div>
+                                <h3 class="post-title"><a href="blog-single.html">Бид яагаад баримтыг үл ойшоож, сэтгэл хөдлөлдөө автдаг вэ?</a></h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="uk-visible@l">
+                    <a class="sm-pagenav uk-position-center-left-out uk-position-medium" href="#" uk-slider-item="previous"><img src="assets/images/icon-arrow-left.svg" data-uk-svg alt=""></a>
+                    <a class="sm-pagenav uk-position-center-right-out uk-position-medium" href="#" uk-slider-item="next"><img src="assets/images/icon-arrow-right.svg" data-uk-svg alt=""></a>
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-hidden@l"></ul>
+
+            </div>
+        </div>
+
+    </div>
+</section> -->
+<section class="uk-section light_bg">
+    <div class="uk-container">
+        <div class="sm-element uk-text-center sm-heading m80">
+            <h6 class="secondary_color">
+                Найдвартай зээлдэгчид
+            </h6>
+            <h2 class="sm-title">
+                Харилцагчдын сэтгэгдэл
+            </h2>
+        </div>
+
+        <div class="mt-16" data-uk-slider>
+
+            <div class="uk-position-relative">
+
+                <div class="uk-slider-container">
+                    <ul class="uk-slider-items uk-grid-match uk-grid uk-child-width-1-3@m uk-child-width-1-2@s" data-uk-scrollspy="target: > li; cls:uk-animation-slide-bottom-small; delay: 200;">
+
+
+                        <li class="test-item">
+                            <div class="entry-media uk-grid-32 uk-child-width-auto uk-flex-middle" data-uk-grid>
+                                <div>
+                                    <div class="img-container">
+                                        <img class="uk-mw-96" src="assets/images/avatar-img-1.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="test-title">
+                                    <h5>З. Бат-Эрдэнэ</h5>
+                                    <span>“Smart Business” ХХК</span>
+                                </div>
+                            </div>
+                            <p class="test-content para-lead">
+                                “Бид өмнө нь олон газраас бизнесийн зээл авах гэж судлаж үзсэн. Таванбогд Финанс бол хамгийн зөв сонголт юм. Онлайнаар зээлийн хүсэлтээ илгээж, хамгийн таатай нөхцлөөр богино хугацаанд зээлээ авсандаа баяртай байна. “
+                            </p>
+                        </li>
+
+                        <li class="test-item">
+                            <div class="entry-media uk-grid-32 uk-child-width-auto uk-flex-middle" data-uk-grid>
+                                <div>
+                                    <div class="img-container">
+                                        <img class="uk-mw-96" src="assets/images/avatar-img-2.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="test-title">
+                                    <h5>Н. Зоригт</h5>
+                                    <span>“Mazaalaid” ХХК</span>
+                                </div>
+                            </div>
+                            <p class="test-content para-lead">
+                                “Таванбогд Финанс бол хамгийн зөв сонголт юм. Онлайнаар зээлийн хүсэлтээ илгээж, хамгийн таатай нөхцлөөр богино хугацаанд зээлээ авсандаа баяртай байна. “
+                            </p>
+                        </li>
+
+                        <li class="test-item">
+                            <div class="entry-media uk-grid-32 uk-child-width-auto uk-flex-middle" data-uk-grid>
+                                <div>
+                                    <div class="img-container">
+                                        <img class="uk-mw-96" src="assets/images/avatar-img-3.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="test-title">
+                                    <h5>Д. Мөнхцэцэг</h5>
+                                    <span>“UB Logistics” ХХК</span>
+                                </div>
+                            </div>
+                            <p class="test-content para-lead">
+                                “Бид өмнө нь олон газраас бизнесийн зээл авах гэж судлаж үзсэн. Таванбогд Финанс бол хамгийн зөв сонголт юм. Онлайнаар зээлийн хүсэлтээ илгээж, хамгийн таатай нөхцлөөр богино хугацаанд зээлээ авсандаа баяртай байна. “
+                            </p>
+                        </li>
+
+                        <li class="test-item">
+                            <div class="entry-media uk-grid-32 uk-child-width-auto uk-flex-middle" data-uk-grid>
+                                <div>
+                                    <div class="img-container">
+                                        <img class="uk-mw-96" src="assets/images/avatar-img-2.png" alt="" />
+                                    </div>
+                                </div>
+                                <div class="test-title">
+                                    <h5>Н. Зоригт</h5>
+                                    <span>“Mazaalaid” ХХК</span>
+                                </div>
+                            </div>
+                            <p class="test-content para-lead">
+                                “Таванбогд Финанс бол хамгийн зөв сонголт юм. Онлайнаар зээлийн хүсэлтээ илгээж, хамгийн таатай нөхцлөөр богино хугацаанд зээлээ авсандаа баяртай байна. “
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="uk-visible@l">
+                    <a class="sm-pagenav uk-position-center-left-out uk-position-medium" href="#" uk-slider-item="previous"><img src="assets/images/icon-arrow-left.svg" data-uk-svg alt=""></a>
+                    <a class="sm-pagenav uk-position-center-right-out uk-position-medium" href="#" uk-slider-item="next"><img src="assets/images/icon-arrow-right.svg" data-uk-svg alt=""></a>
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-hidden@l"></ul>
+
+            </div>
+        </div>
+
+    </div>
+</section><footer class="uk-section uk-padding-remove-vertical heading_bg uk-light">
+    <!-- <div class="top-area">
+        <div class="uk-container">
+            <div class="uk-flex uk-flex-middle uk-flex-center" data-uk-grid>
+                <div class="uk-width-1-1 uk-width-2-3@s uk-width-2-3@m">
+                    <h3 class="mw-510">Та яг одоо бидэн рүү онлайнаар зээлийн хүсэлтээ илгээгээрэй.</h3>
+                </div>
+                <div class="uk-width-1-1 uk-width-1-3@s uk-width-1-3@m uk-flex uk-flex-right">
+                    <a href="contact.html" class="uk-button large primary_bg">Зээлийн хүсэлт илгээх</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="bottom-area">
+        <div class="uk-container">
+            <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-medium" data-uk-grid>
+                <div class="widget uk-width-1-1 uk-width-1-3@s uk-width-5-12@m">
+                    <img src="assets/images/logo-white.svg" class="uk-preserve" data-uk-svg alt="Таван богд финанс">
+                    <p class="mt-32">Таванбогд Финанс ХХК, ХААН Банк цамхаг Чингисийн өргөн чөлөө-6, Стадион Оргил-1, Хан-Уул дүүрэг, Улаанбаатар 17010, Монгол Улс.</p>
+                </div>
+                <div class="widget uk-width-1-1 uk-width-1-3@s uk-width-1-4@m">
+                    <!-- <h3 class="widget-title"><span>Хэрэгцээт холбоос</span></h3>
+                    <ul>
+                        <li>
+                            <a href="about-us.html">Зээлийн бүтээгдэхүүн</a>
+                        </li>
+                        <li>
+                            <a href="#">Санхүүгийн зөвлөгөө</a>
+                        </li>
+                        <li>
+                            <a href="#">Мэдээ мэдээлэл</a>
+                        </li>
+                        <li>
+                            <a href="#">Холбоо барих</a>
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="widget uk-width-1-1 uk-width-1-3@s uk-width-1-3@m">
+                    <div class="sm-contact-widget">
+                        <h3 class="widget-title"><span>Бидэнтэй нэгдээрэй</span></h3>
+                        <ul>
+                            <li>
+                                <div class="sm-element sm-socials sm-social-light with-hover">
+                                    <a href=""><img src="assets/images/icon-facebook.svg" data-uk-svg class="uk-preserve" alt=""></a>
+                                    <a href=""><img src="assets/images/icon-instagram.svg" data-uk-svg class="uk-preserve" alt=""></a>
+                                    <a href=""><img src="assets/images/icon-twitter.svg" data-uk-svg class="uk-preserve" alt=""></a>
+                                    <a href=""><img src="assets/images/icon-youtube.svg" data-uk-svg class="uk-preserve" alt=""></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-area">
+        <div class="uk-container">
+            <div class="footer-top-line copyright">
+                <p><span class="uk-light">Таванбогд Финанс ХХК</span> © 2021. Бүх эрх хуулиар хамгаалагдсан</p>
+            </div>
+        </div>
+    </div>
+</footer></div>
+<!-- .main-container close --><script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

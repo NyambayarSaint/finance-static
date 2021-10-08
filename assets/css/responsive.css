@@ -1,0 +1,280 @@
+/*
+ThemeWaves Responsive CSS
+*/
+
+@media (max-width: 1199px) {
+  .sm-topsearch span>input {
+    width: auto;
+  }
+  .uk-button.large2x {
+    padding: 16px 40px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 959px) {
+  .single-responsive-100 {
+    width: 100%;
+  }
+}
+
+
+/* Affects device widths of 959px and smaller. */
+
+@media (max-width: 959px) {
+  .sm-tab-heading .uk-tab>*>a {
+    padding: 12px 16px;
+    font-size: 10px;
+  }
+  .sm-slider .slider-content .sm-title {
+    margin-top: 24px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .loan-form .form-element,
+  .loan-form .result {
+    padding: 28px 30px;
+  }
+  .uk-button.large2x {
+    padding: 16px 40px;
+  }
+  .uk-width-medium {
+    width: auto;
+    max-width: 180px;
+  }
+  .sm-mobile-filter .sm-category-left,
+  .sm-shuultuur {
+    display: block;
+  }
+  .sm-category-header {
+    justify-content: space-between;
+  }
+  .sm-category-right .sm-heading {
+    display: block;
+  }
+  .sm-category-right .sm-filter {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sm-category-left,
+  .sm-category-right {
+    width: 100%;
+    float: unset;
+  }
+  .uk-section-coupon .sm-heading {
+    display: block;
+  }
+  .uk-section-coupon .sm-heading .sm-filter {
+    margin-top: 20px;
+    display: block;
+  }
+  .uk-section-coupon .sm-heading .sm-filter li {
+    margin-bottom: 20px;
+  }
+  .sm-category-right .sm-filter,
+  .sm-category-right,
+  .sm-coupon-content {
+    margin-top: 30px;
+  }
+  .sm-account-sidebar {
+    margin-right: 0;
+  }
+  .sm-location-content .sm-buttons {
+    text-align: left;
+    margin-top: 20px;
+  }
+  .sm-category-left,
+  .sm-steps-line {
+    display: none;
+  }
+  .sm-steps-circle-out {
+    margin-right: 0;
+  }
+  .sm-steps-container {
+    justify-content: space-between;
+  }
+  .sm-finish-content-inner table thead .sm-table-item {
+    margin-right: 30px;
+  }
+  .sm-banner-container,
+  .sm-sidebar {
+    padding-left: 0;
+  }
+  .sm-slider .slider-item {
+    height: 600px;
+  }
+  .sm-carousel .owl-theme .owl-dots {
+    bottom: 50px;
+  }
+  .sm-process .sm-process-block .sm-process-circle:after {
+    display: none;
+  }
+  .sm-tablet-margin {
+    margin-top: 20px;
+  }
+  .sm-comment-bg {
+    margin-bottom: 12px;
+  }
+  .uk-padding-left {
+    padding-left: 0;
+  }
+  .sm-topsearch span>input {
+    width: auto;
+    padding-left: 0;
+    padding-right: 44px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 639px) {
+  .sm-right-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .contact-form {
+    margin-top: 80px;
+    padding: 40px;
+  }
+  *+.uk-grid-margin,
+  .uk-grid+.uk-grid,
+  .uk-grid>.uk-grid-margin {
+    margin-top: 48px;
+  }
+  .entry-media {
+    margin-bottom: 12px;
+  }
+  .sm-box .inner {
+    padding: 32px;
+  }
+  .card-metas {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .top-area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .sm-top-btn {
+    display: none;
+  }
+  .sm-coming-soon .counter .uk-countdown-number {
+    font-size: 32px;
+  }
+  .sm-order-list-item {
+    overflow: auto;
+  }
+  .sm-order-list-item>div {
+    width: 600px;
+  }
+  .sm-finish-content-inner .sm-button:last-child {
+    margin-top: 20px;
+  }
+  .uk-accordion-content {
+    padding: 20px 40px;
+  }
+  .sm-finish-content-inner {
+    padding: 32px 40px;
+  }
+  .sm-finish-content-inner table thead .sm-table-item {
+    margin-right: 0;
+  }
+  .sm-print,
+  .sm-batalgaachih-yavts span,
+  .sm-steps-desc {
+    display: none;
+  }
+  .sm-element+.uk-grid,
+  .sm-element+.sm-element {
+    margin-top: 20px;
+  }
+  .uk-container {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .sm-call-action {
+    padding: 24px 32px;
+    display: block;
+  }
+  .sm-call-action .call-content {
+    display: block;
+  }
+  .sm-call-action .sm-call-title {
+    max-width: 100%;
+    margin: 24px 0;
+  }
+  .sm-call-action .sm-desc {
+    margin-bottom: 24px;
+  }
+  .sm-qty-changer {
+    margin-left: 0;
+  }
+  .sm-mybasket-content-item-right .sm-buttons {
+    text-align: left;
+  }
+  .sm-steps-number .sm-steps-number-inner {
+    width: 40px;
+    height: 40px;
+  }
+  .sm-steps-number .sm-steps-number-inner span {
+    font-size: 16px;
+  }
+  .sm-image-black-friday {
+    margin-left: -50%;
+  }
+  .uk-position-top-left.sm-heading-element {
+    position: relative !important;
+  }
+}
+
+
+/* Affects device widths of 639px and smaller. */
+
+@media (max-width: 480px) {
+  .sm-filter,
+  .sm-filter li {
+    display: inline-block;
+  }
+  .sm-topsearch span>.postfilter:not([multiple]):not([size]) {
+    min-width: auto;
+  }
+  .uk-width-xsmall {
+    width: auto;
+    display: flex;
+  }
+  .sm-featured-store .shop-img-small>img {
+    margin-bottom: 0;
+    margin-right: 4px;
+    width: 90px;
+  }
+  .sm-topbar-right>* {
+    padding-left: 8px;
+  }
+  .sm-topsearch span>input {
+    max-width: 200px;
+  }
+  .uk-navbar-toggle {
+    margin: 24px 0;
+    height: auto;
+    min-height: auto;
+  }
+  .uk-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sm-steps-number {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .sm-topsearch span>input {
+    max-width: 140px;
+  }
+  .sm-box.layout-2.top {
+    padding-left: 40px;
+  }
+  .sm-coming-soon .counter-item {
+    margin: 0 12px;
+  }
+}
